@@ -1,0 +1,146 @@
+/* Login Links */
+div#top-links-container{
+	 margin:0 0px 0 0px;
+	 background: #333 ;
+	 border-bottom: 1px dotted #A40404;
+	 
+}
+div#top-links-container div.login_links{
+      
+	overflow: hidden;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Geneva, sans-serif;
+	padding: 0px 10px 0px 10px;
+	color: #25587E;
+
+    
+}
+div.login_links div.wox_search{
+    float: right;
+    border: 1px solid #CCC;
+    overflow: hidden;
+    background: #FFF;
+    padding-right: 2px;
+	margin-top:0px;
+	height:22px;
+    
+}
+div.login_links input[type='text'],
+div.login_links input[type='password']{
+    border: 0;
+    background: #FFF;
+    width: 120px;
+    padding-top: -1px;
+    color: #666;
+	font-size:12px;
+	font-weight: bold;
+	
+}
+
+
+
+div.login_links div.the_links{
+    float: left;
+    padding: 3px 4px 0 10px;
+}
+div#top-links-container a{
+	color:#fff;
+	text-decoration: none;
+}
+div#top-links-container a:hover{ 
+	color:#DFA102;
+    text-decoration: underline;
+}
+div#top-links-container span.icons{
+    display: block;
+    float: right;
+    margin-left: 10px;
+    margin-top: -1px;
+}
+
+#search_button {
+
+	border: none;
+	background: none;
+	cursor: pointer;
+	background: url(../img/srh.png) no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-top:2px;
+}
+
+
+
+
+
+
+/**   nav**/
+div#wox-buttons-container{
+	background: #A40404;
+	height: 36px;
+	overflow: hidden;
+	
+}
+div#wox-buttons-container div{
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+div#wox-buttons-container a{
+	color:  #fff;
+	font-weight: bold;
+	display: block;
+	float: left;
+	height: 36px;
+	margin: 0px 10px 0 0;
+	padding: 2px 4px 0 4px;
+	background-repeat: no-repeat;
+	background-position: 0px top;
+	overflow: hidden;
+	background: url(../img/nav/bgtabs.png) repeat-x left -65px;
+
+}
+/** FOR IE **/
+div#wox-buttons-container a#but-xoops{ width: 85px; }
+div#wox-buttons-container a#but-faq{ width: 65px; }
+div#wox-buttons-container a#but-forums{ width: 85px; }
+div#wox-buttons-container a#but-mods{ width: 95px; }
+div#wox-buttons-container a#but-themes{ width: 90px; }
+div#wox-buttons-container a#but-news{ width: 92px; }
+
+div#wox-buttons-container a:hover{
+	background-position: bottom;
+	text-decoration: none;
+	background: #333;
+}
+div#wox-buttons-container a.selected{
+	background: #333 ;
+	color: #fff;
+	background-position: bottom;
+	text-decoration: none;
+}
+div#wox-buttons-container a img{
+	float: left;
+	margin-right: 5px;
+}
+div#wox-buttons-container a span{
+	display: block;
+	float: right;
+	margin-top: 8px;
+}
+div#wox-buttons-container a.get{
+	display: block;
+	float: right;
+	padding: 0;
+	height: 36px;
+	margin: 0;
+	background: none;
+}
+
+
+
+
+
+

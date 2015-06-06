@@ -1,0 +1,62 @@
+
+<div id="wox-buttons-container">
+	<div>
+	<a href="http://cid-c973d2cdfd9e243b.skydrive.live.com/browse.aspx/.Public/Xoops%20Themes" target="_blank" title="Mes Thèmes" class="get"><img src="<{$xoops_imageurl}>img/nav/get.png" alt="Mes Thèmes" /></a>
+	<a id="but-xoops" href="<{$xoops_url}>"<{if $xoops_dirname==''}> class="selected"<{/if}>><span>Acceuil</span><img src="<{$xoops_imageurl}>img/nav/overview32.png" /></a>
+	<a id="but-faq" href="<{$xoops_url}>/modules/smartfaq/"<{if $xoops_dirname=='smartfaq'}> class="selected"<{/if}>><span>FAQ</span><img src="<{$xoops_imageurl}>img/nav/faq.png" /></a>
+	<a id="but-themes"href="http://www.ithri.info/modules/news/index.php?storytopic=5"<{if $xoops_dirname=='news'}> class="selected"<{/if}>><span>Themes</span><img src="<{$xoops_imageurl}>img/nav/themes32.png" /></a>
+	<a id="but-forums" href="<{$xoops_url}>/modules/contact/"<{if $xoops_dirname=='smartfaq'}> class="selected"<{/if}>><span>Contact</span><img src="<{$xoops_imageurl}>img/nav/forums32.png" /></a>
+	<a id="but-mods" href="<{$xoops_url}>/modules/eazydld/"<{if $xoops_dirname=='eazydld'}> class="selected"<{/if}>><span>Download</span><img src="<{$xoops_imageurl}>img/nav/downs32.png" /></a>
+	
+	<a id="but-news" href="<{$xoops_url}>/modules/news/index.php?storytopic=2"<{if $xoops_dirname=='news'}> class="selected"<{/if}>><span>Softnews</span><img src="<{$xoops_imageurl}>img/nav/news32.png" /></a>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- login-->	
+		
+		<div id="top-links-container" class="table">
+	<div class="login_links" id="wox-login-all">
+    	<div class="wox_search">
+        	   	<form   action="<{xoAppUrl search.php}>" method="get">
+					<input type="text"  name="query" />
+					<input id="search_button" type="submit" value="" />
+					<input type="hidden" name="action" value="results" />			
+					
+				</form>
+        </div>
+        <div class="the_links">
+		 
+        <{if $xoops_isuser}>
+            <span class="icons">
+			    <a href="<{xoAppUrl /user.php}>"><img src="<{xoImgUrl icons/profile.png}>" alt="Mon profil" title="Voir son profil" /></a>&nbsp; &nbsp; 
+            	 <{xoInboxCount assign=pmcount}>
+				 
+            	<a href="<{$xoops_url}>/notifications.php" title="Notifications"><img src="<{$xoops_imageurl}>icons/alerts.png" alt="Notifications" /></a>&nbsp; &nbsp; 
+				<{if $pmcount}><!-- si j'ai des messages --><a href="<{xoAppUrl www/viewpmsg.php}>"><img src="<{xoImgUrl icons/emailin.png}>" 
+				alt="(<{$pmcount}>) Messages" title="Vous avez <{$pmcount}> messages non lues" />&nbsp; &nbsp; 
+                <{else}>
+				
+				<a href="<{$xoops_url}>/viewpmsg.php" title="Private Messages"><img src="<{$xoops_imageurl}>icons/email.png" alt="Messages" /><{/if}></a>&nbsp; &nbsp; 
+				<{if $xoops_isadmin}>
+			<!--administration de module -->
+			<a href="<{xoAppUrl /admin.php}>"><img src="<{xoImgUrl icons/admin.png}>" alt="Administration" 
+			title="Afficher la zone d'administration" /></a>
+			<{/if}>
+			</span>
+            <a href="<{$xoops_url}>/user.php?op=logout"><img src="<{$xoops_imageurl}>icons/exit.png" title="Déconnexion" /></a>&nbsp; &nbsp;  
+           
+        <{else}>
+            <a href="<{$xoops_url}>/modules/profile/register.php">Cree un compte ?</a><img src="<{xoImgUrl icons/cont.png}>" /> &nbsp;|&nbsp; 
+			<a href="<{xoAppUrl /user.php}>"> Connexion</a><img src="<{xoImgUrl icons/ok.png}>" />
+        <{/if}>
+    	</div>
+</div></div>
+<!--End login-->	
+
